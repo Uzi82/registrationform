@@ -16,7 +16,8 @@
     font-size: 1rem;
 }
 .background{
-    background-color: white;
+    position: absolute;
+    z-index: 1000;
     width: 100vw;
     height: 100vh;
 }
@@ -38,9 +39,100 @@
                 -40px -40px 100px #ffffff;
 }
 b {
-    padding: 7.5%;
+    padding-left: 10%;
+    padding-top: 10%;
+    margin-bottom: 1%;
 }
 .SignOrLogin {
     font-family: Bold, sans-serif;
     font-size: 2rem;
+}
+.login {
+    font-size: 1.75rem;
+    color: rgb(50, 50, 50);
+}
+.line {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: gray;
+    width: auto;
+    height: 2px;
+    border-radius: 3px;
+}
+input {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 7.5%;
+    font-size: 1.5rem;
+    padding-left: 3%;
+    border-radius: 3px;
+}
+.text {
+    font-size: 1.75rem;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.btn {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 30px;
+    height: 10%;
+    cursor: pointer;
+    border-radius: 5px;
+    scale: 0.9;
+    animation-name: scale-down-center;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+.btn > strong {
+    font-family: Bold, sans-serif;
+    font-size: 2rem;
+}
+.btn:hover {
+    animation-name: scale-up-center;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+}
+@keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #eee9e9;
+    overflow: hidden;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+         -o-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

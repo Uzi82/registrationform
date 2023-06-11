@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="YourIcon.ico" type="image/x-icon">
+    <title>Registration</title>
 </head>
 <body>
-    <script defor src="index.js"></script>
+    <canvas id='c'></canvas>
     <div class="background">
         <div class="flex">
             <form action="someAction.php" class="form">
                 <b><span class="SignOrLogin">
-                    Sign Up / <a href="login.html" class="login"> Log In</a>
+                    Sign Up / <a href="login.html" class="login" tabindex="-1"> Log In</a>
                 </span></b>
-                <input type="text" tabindex="1">
-                <input type="text" tabindex="2">
-                <input type="button">
+                <div class="line"></div>
+                <h1 class="text">Username</h1>
+                <input type="text" tabindex="1" autofocus placeholder="Ivan Ivanov">
+                <h1 class="text">Password</h1>
+                <input type="password" tabindex="2" placeholder="*************">
+                <button type="submit" class="btn" tabindex="-1"><strong>Sign Up</strong></button>
             </form>
         </div>
     </div>
+    <script src='https://rawgit.com/akm2/simplex-noise.js/master/simplex-noise.js'></script>
+    <script src="script.js"></script>
 </body>
 </html>
