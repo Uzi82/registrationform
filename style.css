@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Bold, sans-serif;
+    src: url("/TitilliumWeb-Bold.ttf");
+}
+@font-face {
+    font-family: Light, sans-serif;
+    src: url("/TitilliumWeb-Light.ttf");
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background-color: none;
+    overflow: hidden;
+    font-family: Light, sans-serif;
+    font-size: 1rem;
+}
+.background{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+.flex{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 60vh;
+    width: 30vw;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  40px 40px 100px #707070,
+                -40px -40px 100px #ffffff;
+}
+b {
+    padding: 7.5%;
+}
+.SignOrLogin {
+    font-family: Bold, sans-serif;
+    font-size: 2rem;
+}
