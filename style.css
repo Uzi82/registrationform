@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    height: 60vh;
+    height: 70vh;
     width: 30vw;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
     box-shadow:  40px 40px 100px #707070,
