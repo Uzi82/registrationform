@@ -12,13 +12,13 @@
     <canvas id='c'></canvas>
     <div class="background">
         <div class="flex">
-            <form action="someAction.php" class="form">
+            <form action="someAction.php" class="form" onsubmit="return false">
                 <b><span class="SignOrLogin">
                     Sign Up / <a href="login.html" class="login" tabindex="-1"> Log In</a>
                 </span></b>
                 <div class="line"></div>
-                <h1 class="text" id="Username">Username</h1>
-                <input type="text" tabindex="1" autofocus placeholder="Ivan Ivanov">
+                <h1 class="text">Username</h1>
+                <input type="text" tabindex="1" autofocus id="Username" placeholder="Ivan Ivanov">
                 <h1 class="text">Password</h1>
                 <input type="password" tabindex="2" placeholder="*************" id="password">
                 <h1 class="text">Check password</h1>

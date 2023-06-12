@@ -1,23 +1,33 @@
-const username = document.querySelector('#username')
+const username = document.querySelector('#Username')
 const password = document.querySelector('#password')
 const checkPassword = document.querySelector('#checkPassword')
 const button = document.querySelector('#sumbit')
 const form = document.querySelector('.form')
 let PasswordMismatch = true
-let reason = ''
 checkPassword.oninput = function() {
     if(checkPassword.value != password.value) {
         PasswordMismatch = false
     }
     else PasswordMismatch = true
 }
-form.onsumbit = function(event) {
-    if(username.value == "") stopSumbitting(event, 'Invalid username')
-    else if(password.value == "" || checkPassword.value == "") stopSumbitting(event, 'Fill password boxes')
-    else if(PasswordMismatch == false) stopSumbitting(event, 'Password mismatch')
-    else return
+document.addEventListener("keydown", (e) => {if(e.code == "Enter") check()})
+button.onpointerdown = check
+function check(){
+    if(username.value == "") {
+        stopSumbitting('Invalid username')
+        return false
+    }
+    else if(password.value == "" || checkPassword.value == "") {
+        stopSumbitting('Fill password boxes')
+        return false
+    }
+    else if(PasswordMismatch == false) {
+        stopSumbitting('Password mismatch')
+        return false
+    }
+    form.submit()
 }
-function stopSumbitting(event, reason) {
-    button.innerHTML = `<strong> ${reason} </strong>`
+function stopSumbitting(reason) {
+    button.innerHTML = `<strong style="font-size: 1.4rem;"> ${reason} </strong>`
     return false
 }
