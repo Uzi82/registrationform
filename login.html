@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="YourIcon.ico" type="image/x-icon">
+    <title>Registration</title>
+</head>
+<body>
+    <canvas id='c'></canvas>
+    <div class="background">
+        <div class="flex">
+            <form action="someAction.php" class="form" onsubmit="return false">
+                <b><span class="SignOrLogin">
+                    Log In / <a href="index.html" class="login" tabindex="-1"> Sign Up</a>
+                </span></b>
+                <div class="line"></div>
+                <h1 class="text">Username</h1>
+                <input type="text" tabindex="1" autofocus id="Username" placeholder="Ivan Ivanov">
+                <h1 class="text">Password</h1>
+                <input type="password" tabindex="2" placeholder="*************" id="password">
+                <button type="submit" class="btn" tabindex="-1" id="sumbit"><strong>Log in</strong></button>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src='https://rawgit.com/akm2/simplex-noise.js/master/simplex-noise.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
